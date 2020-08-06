@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">SmartHive</string>
+
+    <!--Toolbar menus-->
+    <string name="clear">Clear</string>
+    <string name="cut">Cut</string>
+    <string name="copy">Copy</string>
+    <string name="paste">Paste</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+
+    <!--Drawer Menus-->
+    <string name="logout">Esci</string>
+
+    <!--Login-->
+    <string name="login_dummy">Login</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="noAccount">Non hai un account? </string>
+    <string name="registrati"><u><b>Registrati!</b></u></string>
+
+    <!--Registrazione-->
+    <string name="registrazione">Registrazione</string>
+    <string name="ripetiPassword">Ripeti Password</string>
+    <string name="RegistratiButton">Registrati</string>
+
+    <!--Login Validation-->
+    <string name="empty_email">Inserisci un email non vuota.</string>
+    <string name="formato_errato">Formato errato email</string>
+    <string name="invalid_emailPassword">Email o password sbagliati.</string>
+    <string name="empty_password">Inserisci una password non vuota.</string>
+    <string name="empty_password2">Ripeti la password.</string>
+    <string name="account_esistente">Account già esistente.</string>
+    <string name="password_diverse">Le password inserite non corrispondono.</string>
+
+    <!--Pagine Valori-->
+    <string name="pesticidi">Pesticidi</string>
+    <string name="livello_pesticidi">Livello dei pesticidi</string>
+    <string name="statoSalute">Stato di salute</string>
+    <string name="Contavoli">Conta voli</string>
+    <string name="parassiti">Presenza parassiti</string>
+    <string name="regina">Vitalità della regina</string>
+    <string name="temperaturaInterna">Temperatura interna</string>
+    <string name="clima">Condizioni climatiche</string>
+    <string name="risorse">Risorse alimentari</string>
+    <string name="sciamatura">Sciamatura</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="precipitazioni">Probabilità precipitazioni</string>
+    <string name="umidita">Livello di umidità</string>
+    <string name="etaRegina">Età della regina</string>
+    <string name="livelloAnidride">Livello di anidride carbonica</string>
+    <string name="aumentoTemperatura">Aumento temperatura interna</string>
+    <string name="frequenzaSonora">Cambio frequenza sonora</string>
+
+    <!--button-->
+    <string name="accedi">Accedi</string>
+    <string name="submit">Submit</string>
+
+    <!--Rimozione Arnia-->
+    <string name="rimozione">Vuoi rimuovere in modo definitivo l\'arnia?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    s
+    <!--HomePage-->
+    <string name="lista">Lista Arnie</string>
+    <string name="aggiunta_arnia">Aggiungi arnia</string>
+    <string name="title_activity_home_page">HomePage</string>
+
+    <!--Impostazioni-->
+    <string name="impostazioni_titolo">Impostazioni</string>
+    <string name="notifiche">Notifiche abilitate</string>
+    <string name="esci"><u>Esci</u></string>
+
+    <!--SharedPreferences-->
+    <string name="file_utenti">utenti</string>
+    <string name="file_arnie">arnie</string>
+
+    <!--Temperatura interna-->
+    <string name="storicoTemperature">Storico temperature</string>
+
+    <!--Risorse alimentari-->
+    <string name="RisorseAlimentari">Risorse Alimentari</string>
+    <string name="livello_RisorseAlimentari">Livello delle risorse</string>
+    <string name="aggiunta">Inserisci il codice dell\'arnia da aggiungere:</string>
+    <string name="codice">Codice numerico</string>
+    <string name="conferma">Conferma</string>
+    <string name="annulla">Annulla</string>
+
+</resources>

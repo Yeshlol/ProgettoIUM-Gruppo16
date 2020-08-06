@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="20dp"
+            android:layout_margin="15dp">
+            <TextView
+                style="@style/TextStyle.Heading"
+                android:id="@+id/tvTitolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/home"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:layout_below="@id/tvTitolo"
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_analisi"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="9dp"
+                android:background="@drawable/button_param"
+                android:fontFamily="@font/opensans_bold"
+                android:onClick="analisiCliccato"
+                android:text="@string/analisi"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_below="@id/btn_analisi"
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_dosaggi"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="9dp"
+                android:background="@drawable/button_param"
+                android:fontFamily="@font/opensans_bold"
+                android:onClick="dosaggiCliccato"
+                android:text="@string/dosaggi"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav"
+        android:background="@drawable/bottom_bar"
+        app:itemIconTint="@color/black_effective"
+        app:itemTextColor="@color/black_effective" />
+</RelativeLayout>
