@@ -135,6 +135,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/radio_group"
+                android:checkedButton="@id/radio_dipendente"
                 android:layout_marginTop="10dp">
 
                 <RadioButton android:id="@+id/radio_analista"

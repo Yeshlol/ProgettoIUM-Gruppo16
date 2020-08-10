@@ -7,12 +7,16 @@
     tools:context=".HomePage">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="20dp"
-            android:layout_margin="15dp">
+            android:layout_margin="15dp"
+            android:paddingBottom="30dp">
+
             <TextView
                 style="@style/TextStyle.Heading"
                 android:id="@+id/tvTitolo"
@@ -35,8 +39,8 @@
 
                 <Button
                     android:id="@+id/btn_storico"
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
                     android:layout_margin="9dp"
                     android:background="@drawable/button_param"
                     android:fontFamily="@font/opensans_bold"
@@ -46,8 +50,8 @@
 
                 <Button
                     android:id="@+id/btn_colture"
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
                     android:layout_margin="9dp"
                     android:background="@drawable/button_param"
                     android:fontFamily="@font/opensans_bold"
@@ -65,8 +69,8 @@
 
                 <Button
                     android:id="@+id/btn_pianifica"
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
                     android:layout_margin="9dp"
                     android:background="@drawable/button_param"
                     android:fontFamily="@font/opensans_bold"
@@ -76,8 +80,8 @@
 
                 <Button
                     android:id="@+id/btn_dosaggi"
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
                     android:layout_margin="9dp"
                     android:background="@drawable/button_param"
                     android:fontFamily="@font/opensans_bold"
@@ -95,8 +99,8 @@
 
                 <Button
                     android:id="@+id/btn_analisi"
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
                     android:layout_margin="9dp"
                     android:background="@drawable/button_param"
                     android:fontFamily="@font/opensans_bold"

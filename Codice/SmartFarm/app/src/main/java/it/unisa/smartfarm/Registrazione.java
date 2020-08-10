@@ -22,6 +22,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class Registrazione extends AppCompatActivity {
@@ -48,12 +49,6 @@ public class Registrazione extends AppCompatActivity {
         textInputLayoutPassword=findViewById(R.id.tInputPassword);
         textInputLayoutPassword2=findViewById(R.id.tInputPasswordRipeti);
 
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
-
-        int radioButtonID = radioGroup.getCheckedRadioButtonId();
-
-        radioButton = (RadioButton) radioGroup.findViewById(radioButtonID);
-
         errortextView=new TextView(getApplicationContext());
         errortextView.setTextSize(18);
         layoutParams=new LinearLayout.LayoutParams(
@@ -66,11 +61,24 @@ public class Registrazione extends AppCompatActivity {
     }
 
     public void registra (View v){
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
+
+        int radioButtonID = radioGroup.getCheckedRadioButtonId();
+
+        radioButton = (RadioButton) radioGroup.findViewById(radioButtonID);
+
         String emailText = email.getText().toString();
         String passwordText = password.getText().toString();
         String passwordRipetiText = password2.getText().toString();
         SharedPreferences spUtenti = getSharedPreferences(getResources().getString(R.string.file_utenti), Context.MODE_PRIVATE);
-        String password = spUtenti.getString(emailText,null);
+        Set<String> set = spUtenti.getStringSet(emailText, null);
+        
+        if (set != null) {
+            textInputLayoutEmail.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext_error));
+            errortextView.setText(R.string.account_esistente);
+            linearLayout.addView(errortextView,3,layoutParams);
+            return;
+        }
 
         linearLayout.removeView(errortextView);
         textInputLayoutEmail.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext));
@@ -95,12 +103,6 @@ public class Registrazione extends AppCompatActivity {
             linearLayout.addView(errortextView,3,layoutParams);
             return;
         }
-        if (password!=null){
-            textInputLayoutEmail.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext_error));
-            errortextView.setText(R.string.account_esistente);
-            linearLayout.addView(errortextView,3,layoutParams);
-            return;
-        }
         if (!passwordRipetiText.equals(passwordText)){
             textInputLayoutPassword.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext_error));
             textInputLayoutPassword2.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext_error));
@@ -116,6 +118,8 @@ public class Registrazione extends AppCompatActivity {
         Set<String> hash_Set = new HashSet<String>();
         hash_Set.add(passwordText);
         hash_Set.add(ruolo);
+
+        System.out.println("Account da registrare: " + emailText + " " + passwordText + " " + ruolo);
 
         editor.putStringSet(emailText, hash_Set);
 

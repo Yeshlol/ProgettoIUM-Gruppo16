@@ -30,7 +30,8 @@
     <!--Login Validation-->
     <string name="empty_email">Inserisci un email non vuota.</string>
     <string name="formato_errato">Formato errato email</string>
-    <string name="invalid_emailPassword">Email o password sbagliati.</string>
+    <string name="invalid_emailPassword">Email o password errati.</string>
+    <string name="email_not_found">Email non trovata</string>
     <string name="empty_password">Inserisci una password non vuota.</string>
     <string name="empty_password2">Ripeti la password.</string>
     <string name="account_esistente">Account già esistente.</string>
@@ -38,7 +39,7 @@
 
     <!--Homepage Valori-->
     <string name="storico">Storico Colture</string>
-    <string name="colture">Colture Pianificate</string>
+    <string name="colture">Piano Colture</string>
     <string name="pianifica">Pianifica Coltura</string>
     <string name="dosaggi">Gestione Dosaggi</string>
     <string name="analisi">Analisi Dati</string>

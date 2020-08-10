@@ -18,18 +18,10 @@ public class HomePage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        findViewById(R.id.tastoHome).setBackgroundColor(getResources().getColor(R.color.light_gray));
-        findViewById(R.id.tastoHome).setEnabled(false);
 
         Intent intent = getIntent();
         if(intent != null ){
             accountAttivo = (Account)intent.getSerializableExtra("account");
-            SharedPreferences spColture = getSharedPreferences(getResources().getString(R.string.file_colture), Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = spColture.edit();
-            Set<String> set = new HashSet<String>();
-            set.addAll(accountAttivo.getColture());
-            editor.putStringSet(accountAttivo.getEmail(), set);
-            editor.commit();
 
             if(accountAttivo.getRuolo().equals("Amministratore"))
                 setContentView(R.layout.activity_homepage_admin);
@@ -38,6 +30,9 @@ public class HomePage extends AppCompatActivity {
             else
                 setContentView(R.layout.activity_homepage_dipendente);
         }
+
+        findViewById(R.id.tastoHome).setBackgroundColor(getResources().getColor(R.color.light_gray));
+        findViewById(R.id.tastoHome).setEnabled(false);
     }
 
     public void homeCliccato(MenuItem item){

@@ -66,10 +66,12 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences spColture = getSharedPreferences(getResources().getString(R.string.file_colture),Context.MODE_PRIVATE);
         SharedPreferences.Editor editor2 = spColture.edit();
 
-        editor2.putString("luciodurso@smartfarm.it", "1");
-        editor2.putString("luciodurso@smartfarm.it", "2");
-        editor2.putString("luciodurso@smartfarm.it", "3");
-        editor2.putString("luciodurso@smartfarm.it", "4");
+        Set<String> hash_Set2 = new HashSet<String>();
+
+        hash_Set2.add("Campo 1");
+        hash_Set2.add("Campo 2");
+
+        editor2.putStringSet("luciodurso@smartfarm.it", hash_Set2);
         editor2.commit();
     }
 
@@ -102,17 +104,25 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences spUtenti = getSharedPreferences(getResources().getString(R.string.file_utenti),Context.MODE_PRIVATE);
 
         Set<String> set = spUtenti.getStringSet(emailText, null);
-        Iterator<String> it = set.iterator();
         String password = null;
         String ruolo = null;
 
-        if(it.hasNext())
-             password = it.next();
+        if (set != null) {
+            Iterator<String> it = set.iterator();
 
-        if(it.hasNext())
-            ruolo = it.next();
+            if(it.hasNext())
+                password = it.next();
 
-        System.out.println(emailText + " " + password + " " + ruolo);
+            if(it.hasNext())
+                ruolo = it.next();
+
+            System.out.println("Account: " + emailText + " " + password + " " + ruolo);
+        }
+        else {
+            errortextView.setText(R.string.email_not_found);
+            linearLayout.addView(errortextView,2,layoutParams);
+            return;
+        }
 
         if (password == null || !passwordText.equals(password)){
             errortextView.setText(R.string.invalid_emailPassword);
