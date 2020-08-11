@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage">
+    tools:context=".HomePage"
+    android:background="@drawable/sfondo">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -33,11 +34,11 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_margin="9dp"
-                android:background="@drawable/button_param"
+                android:background="@drawable/button_primary_bg"
                 android:fontFamily="@font/opensans_bold"
                 android:onClick="analisiCliccato"
                 android:text="@string/analisi"
-                android:textColor="@color/white" />
+                android:textColor="@color/black" />
 
             <Button
                 android:layout_below="@id/btn_analisi"
@@ -46,11 +47,11 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_margin="9dp"
-                android:background="@drawable/button_param"
+                android:background="@drawable/button_primary_bg"
                 android:fontFamily="@font/opensans_bold"
                 android:onClick="dosaggiCliccato"
                 android:text="@string/dosaggi"
-                android:textColor="@color/white" />
+                android:textColor="@color/black" />
         </RelativeLayout>
     </ScrollView>
 

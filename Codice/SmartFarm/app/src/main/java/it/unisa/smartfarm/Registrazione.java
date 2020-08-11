@@ -22,7 +22,6 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 
 public class Registrazione extends AppCompatActivity {
@@ -61,6 +60,11 @@ public class Registrazione extends AppCompatActivity {
     }
 
     public void registra (View v){
+        linearLayout.removeView(errortextView);
+        textInputLayoutEmail.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext));
+        textInputLayoutPassword.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext));
+        textInputLayoutPassword2.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext));
+
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
 
         int radioButtonID = radioGroup.getCheckedRadioButtonId();
@@ -79,12 +83,6 @@ public class Registrazione extends AppCompatActivity {
             linearLayout.addView(errortextView,3,layoutParams);
             return;
         }
-
-        linearLayout.removeView(errortextView);
-        textInputLayoutEmail.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext));
-        textInputLayoutPassword.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext));
-        textInputLayoutPassword2.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext));
-
         if (!Patterns.EMAIL_ADDRESS.matcher(emailText).matches()){
             textInputLayoutEmail.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext_error));
             errortextView.setText(R.string.formato_errato);

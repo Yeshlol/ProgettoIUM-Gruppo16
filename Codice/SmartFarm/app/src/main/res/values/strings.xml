@@ -1,16 +1,8 @@
 <resources>
     <string name="app_name">SmartFarm</string>
 
-    <!--Toolbar menus-->
-    <string name="clear">Clear</string>
-    <string name="cut">Cut</string>
-    <string name="copy">Copy</string>
-    <string name="paste">Paste</string>
-    <string name="delete">Delete</string>
-    <string name="share">Share</string>
-
     <!--Drawer Menus-->
-    <string name="logout">Esci</string>
+    <string name="logout">Logout</string>
 
     <!--Login-->
     <string name="login_dummy">Login</string>
@@ -18,7 +10,7 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="noAccount">Non hai un account? </string>
-    <string name="registrati"><u><b>Registrati!</b></u></string>
+    <string name="registrati"><u><b>Registrati</b></u></string>
 
     <!--Registrazione-->
     <string name="registrazione">Registrazione</string>
@@ -36,6 +28,7 @@
     <string name="empty_password2">Ripeti la password.</string>
     <string name="account_esistente">Account già esistente.</string>
     <string name="password_diverse">Le password inserite non corrispondono.</string>
+    <string name="accedi">Login</string>
 
     <!--Homepage Valori-->
     <string name="storico">Storico Colture</string>
@@ -44,38 +37,21 @@
     <string name="dosaggi">Gestione Dosaggi</string>
     <string name="analisi">Analisi Dati</string>
 
-    <!--button-->
-    <string name="accedi">Accedi</string>
-    <string name="submit">Submit</string>
+    <!--Storico Valori-->
+    <string name="prodotti">Prodotti</string>
+    <string name="quantità">Quantità</string>
+    <string name="stagione">Stagione: </string>
 
-    <!--Rimozione Arnia-->
-    <string name="rimozione">Vuoi rimuovere in modo definitivo l\'arnia?</string>
-    <string name="si">Si</string>
-    <string name="no">No</string>
-    s
+    <!--Logout-->
+    <string name="rimozione">Vuoi effettuare il logout?</string>
+    <string name="si">Conferma</string>
+    <string name="no">Annulla</string>
+
     <!--HomePage-->
     <string name="home">Benvenuti in SmartFarm</string>
-    <string name="aggiunta_arnia">Aggiungi arnia</string>
     <string name="title_activity_home_page">HomePage</string>
-
-    <!--Impostazioni-->
-    <string name="impostazioni_titolo">Impostazioni</string>
-    <string name="notifiche">Notifiche abilitate</string>
-    <string name="esci"><u>Esci</u></string>
 
     <!--SharedPreferences-->
     <string name="file_utenti">utenti</string>
     <string name="file_colture">colture</string>
-
-    <!--Temperatura interna-->
-    <string name="storicoTemperature">Storico temperature</string>
-
-    <!--Risorse alimentari-->
-    <string name="RisorseAlimentari">Risorse Alimentari</string>
-    <string name="livello_RisorseAlimentari">Livello delle risorse</string>
-    <string name="aggiunta">Inserisci il codice dell\'arnia da aggiungere:</string>
-    <string name="codice">Codice numerico</string>
-    <string name="conferma">Conferma</string>
-    <string name="annulla">Annulla</string>
-
 </resources>

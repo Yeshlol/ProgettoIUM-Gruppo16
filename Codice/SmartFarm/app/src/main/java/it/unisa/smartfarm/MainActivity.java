@@ -18,7 +18,6 @@ import android.widget.TextView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -68,10 +67,22 @@ public class MainActivity extends AppCompatActivity {
 
         Set<String> hash_Set2 = new HashSet<String>();
 
-        hash_Set2.add("Campo 1");
-        hash_Set2.add("Campo 2");
+        hash_Set2.add("Patate");
+        hash_Set2.add("2 ha");
+        hash_Set2.add("16/03/2020");
+        hash_Set2.add("33 t/ha");
 
-        editor2.putStringSet("luciodurso@smartfarm.it", hash_Set2);
+        editor2.putStringSet("Campo 1", hash_Set2);
+
+        Set<String> hash_Set3 = new HashSet<String>();
+
+        hash_Set2.add("Carote");
+        hash_Set2.add("4 ha");
+        hash_Set2.add("06/05/2020");
+        hash_Set2.add("56 t/ha");
+
+        editor2.putStringSet("Campo 2", hash_Set3);
+
         editor2.commit();
     }
 
@@ -132,14 +143,10 @@ public class MainActivity extends AppCompatActivity {
 
         Account accountLog = new Account(emailText, passwordText, ruolo);
 
-        SharedPreferences spColture = getSharedPreferences(getResources().getString(R.string.file_colture),Context.MODE_PRIVATE);
-        ArrayList<String> colture = new ArrayList<String>(spColture.getStringSet("luciodurso@smartfarm.it",new HashSet<String>()));
-        accountLog.setColture(colture);
-
         Intent i = new Intent();
         i.setClass(this,HomePage.class);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        i.putExtra("account",accountLog);
+        i.putExtra("account", accountLog);
         startActivity(i);
     }
 }
