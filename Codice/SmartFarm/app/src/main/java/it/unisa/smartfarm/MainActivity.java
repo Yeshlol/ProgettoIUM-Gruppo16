@@ -10,6 +10,7 @@ import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -62,26 +63,18 @@ public class MainActivity extends AppCompatActivity {
         editor.putStringSet("luciodurso@smartfarm.it", hash_Set);
         editor.commit();
 
-        SharedPreferences spColture = getSharedPreferences(getResources().getString(R.string.file_colture),Context.MODE_PRIVATE);
+        SharedPreferences spColture = getSharedPreferences(getResources().getString(R.string.file_colture), Context.MODE_PRIVATE);
         SharedPreferences.Editor editor2 = spColture.edit();
 
-        Set<String> hash_Set2 = new HashSet<String>();
+        String[] coltura1 = new String[] {"Patate", "2 ha", "16/03/2020", "33 t/ha"};
 
-        hash_Set2.add("Patate");
-        hash_Set2.add("2 ha");
-        hash_Set2.add("16/03/2020");
-        hash_Set2.add("33 t/ha");
+        String coltura1String = TextUtils.join(";", coltura1);
+        editor2.putString("Coltura 1", coltura1String);
 
-        editor2.putStringSet("Campo 1", hash_Set2);
+        String[] coltura2 = new String[] {"Carote", "4 ha", "06/05/2020", "56 t/ha"};
 
-        Set<String> hash_Set3 = new HashSet<String>();
-
-        hash_Set2.add("Carote");
-        hash_Set2.add("4 ha");
-        hash_Set2.add("06/05/2020");
-        hash_Set2.add("56 t/ha");
-
-        editor2.putStringSet("Campo 2", hash_Set3);
+        String coltura2String = TextUtils.join(";", coltura2);
+        editor2.putString("Coltura 2", coltura2String);
 
         editor2.commit();
     }

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Colture"/>
         <activity android:name=".HomePage"/>
+        <activity android:name=".Pianifica"/>
         <activity android:name=".Registrazione"/>
         <activity android:name=".Storico"/>
         <activity android:name=".MainActivity">

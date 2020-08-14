@@ -51,6 +51,18 @@
     <string name="home">Benvenuti in SmartFarm</string>
     <string name="title_activity_home_page">HomePage</string>
 
+    <!--Pianifica-->
+    <string name="nome_coltura">Coltura n° -</string>
+    <string name="ettari">N° ettari</string>
+    <string name="data">Seleziona Data Semina</string>
+    <string name="resa">Resa Stimata (t/ha)</string>
+    <string name="aggiungi_coltura">Aggiungi</string>
+    <string name="chiave_vuota">Inserisci il nome della coltura</string>
+    <string name="prodotto_vuoto">Inserisci il tipo di coltivazione</string>
+    <string name="ettari_vuoto">Inserisci gli ettari da coltivare</string>
+    <string name="data_non_valida">Data non valida</string>
+    <string name="resa_vuoto">Inserisci la resa attesa</string>
+
     <!--SharedPreferences-->
     <string name="file_utenti">utenti</string>
     <string name="file_colture">colture</string>

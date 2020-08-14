@@ -1,0 +1,57 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Manuel\\.gradle\\caches\\transforms-2\\files-2.1\\f209091eb3926c649f0b3346884e478c\\appcompat-1.1.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "30",
+                        "startColumns": "4",
+                        "startOffsets": "1574",
+                        "endLines": "33",
+                        "endColumns": "12",
+                        "endOffsets": "1742"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Manuel\\.gradle\\caches\\transforms-2\\files-2.1\\76f2b6439d16df60df3177021482ee5a\\core-1.1.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\src\\main\\res\\values-v16\\styles.xml",
+                    "from": {
+                        "startLines": "3,55,50,57,32,45,10,28,24,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "54,2251,2100,2343,1283,1892,374,1096,978,791",
+                        "endLines": "8,55,53,57,42,48,17,31,26,22",
+                        "endColumns": "12,90,12,80,12,12,12,12,12,12",
+                        "endOffsets": "368,2337,2245,2419,1885,2094,785,1278,1090,972"
+                    },
+                    "to": {
+                        "startLines": "3,9,10,14,15,26,34,42,46,49",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "121,440,530,680,760,1367,1747,2163,2349,2466",
+                        "endLines": "8,9,13,14,25,29,41,45,48,52",
+                        "endColumns": "12,89,12,79,12,12,12,12,12,12",
+                        "endOffsets": "435,525,675,755,1362,1569,2158,2344,2461,2647"
+                    }
+                }
+            ]
+        }
+    ]
+}

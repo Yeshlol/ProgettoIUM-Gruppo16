@@ -1,9 +1,7 @@
 package it.unisa.smartfarm;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -12,9 +10,6 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.util.HashSet;
-import java.util.Set;
 
 public class HomePage extends AppCompatActivity {
     private Account accountAttivo;
@@ -66,7 +61,6 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
-
         annulla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,15 +78,15 @@ public class HomePage extends AppCompatActivity {
     }
 
     public void coltureCliccato(View v) {
-        /*Intent i = new Intent(this, Colture.class);
+        Intent i = new Intent(this, Colture.class);
         i.putExtra("account",accountAttivo);
-        startActivity(i);*/
+        startActivity(i);
     }
 
     public void pianificaCliccato(View v) {
-        /*Intent i = new Intent(this, Pianifica.class);
+        Intent i = new Intent(this, Pianifica.class);
         i.putExtra("account",accountAttivo);
-        startActivity(i);*/
+        startActivity(i);
     }
 
     public void dosaggiCliccato(View v) {

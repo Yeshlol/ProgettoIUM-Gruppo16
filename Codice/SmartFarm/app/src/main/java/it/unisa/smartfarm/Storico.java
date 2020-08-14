@@ -1,30 +1,22 @@
 package it.unisa.smartfarm;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.SpinnerAdapter;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.util.HashSet;
-import java.util.Set;
 
 public class Storico extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private Spinner spinner;
@@ -170,7 +162,6 @@ public class Storico extends AppCompatActivity implements AdapterView.OnItemSele
                 dialog.dismiss();
             }
         });
-
 
         annulla.setOnClickListener(new View.OnClickListener() {
             @Override

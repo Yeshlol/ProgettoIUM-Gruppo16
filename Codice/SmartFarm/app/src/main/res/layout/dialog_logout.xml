@@ -5,42 +5,42 @@
     android:background="@drawable/sfondo_dialog"
     android:padding="20dp">
 
-        <TextView
-            android:layout_marginTop="15dp"
-            android:id="@+id/text_logout"
-            android:layout_width="match_parent"
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/text_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rimozione"
+        android:textSize="20dp"
+        android:textColor="@color/black_effective"
+        android:fontFamily="@font/opensans_bold"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_below="@id/text_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_conferma"
+            android:text="@string/si"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
             android:layout_height="wrap_content"
-            android:text="@string/rimozione"
-            android:textSize="20dp"
-            android:textColor="@color/black_effective"
-            android:fontFamily="@font/opensans_bold"
-            android:textAlignment="center"/>
+            android:background="@drawable/button_logout"
+            android:onClick="esciCliccato"/>
 
-        <LinearLayout
-            android:layout_marginTop="25dp"
-            android:weightSum="2"
-            android:orientation="horizontal"
-            android:layout_below="@id/text_logout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-                <Button
-                    android:id="@+id/btn_conferma"
-                    android:text="@string/si"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_logout"
-                    android:onClick="esciCliccato"/>
-
-                <Button
-                    android:id="@+id/btn_annulla"
-                    android:text="@string/no"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/button_confirm"/>
-        </LinearLayout>
+        <Button
+            android:id="@+id/btn_annulla"
+            android:text="@string/no"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_confirm"/>
+    </LinearLayout>
 </RelativeLayout>
