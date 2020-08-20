@@ -112,6 +112,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="imagePath" value="C:\Users\Manuel\Desktop\farmer.png" />
+                                                <entry key="scalingPercent" value="43" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -139,6 +141,12 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="26a69a" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -309,11 +317,6 @@
                             </entry>
                           </map>
                         </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
-                          </map>
-                        </option>
                       </PersistentState>
                     </value>
                   </entry>
@@ -330,10 +333,24 @@
                   <entry key="vectorAssetStep">
                     <value>
                       <PersistentState>
+                        <option name="children">
+                          <map>
+                            <entry key="clipartAsset">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/opacity/baseline_opacity_24.xml" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                         <option name="values">
                           <map>
-                            <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_exit_to_app_black_24dp" />
+                            <entry key="outputName" value="ic_baseline_opacity_24" />
                             <entry key="sourceFile" value="C:\Users\Manuel\Desktop\exit_to_app-black-24dp.svg" />
                           </map>
                         </option>

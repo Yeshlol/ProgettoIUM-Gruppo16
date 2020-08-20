@@ -11,15 +11,12 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Patterns;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
@@ -79,10 +76,12 @@ public class Pianifica extends AppCompatActivity {
         linearLayout = findViewById(R.id.linearLayout);
 
         errortextView = new TextView(getApplicationContext());
-        errortextView.setTextSize(18);
+        errortextView.setTextSize(12);
+        errortextView.setGravity(Gravity.CENTER);
         layoutParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        layoutParams.gravity= Gravity.CENTER;
+        layoutParams.gravity = Gravity.CENTER;
+
 
         errortextView.setTypeface(null, Typeface.BOLD);
         errortextView.setPadding(50,20,50,20);
@@ -153,18 +152,16 @@ public class Pianifica extends AppCompatActivity {
         String dataText = data.getText().toString();
         String resaText = resa.getText().toString();
 
-        System.out.println("Data Text: " + dataText);
-
         if (chiaveText.equals("")){
             textInputLayoutChiave.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext_error));
             errortextView.setText(R.string.chiave_vuota);
-            linearLayout.addView(errortextView,3,layoutParams);
+            linearLayout.addView(errortextView,1,layoutParams);
             return;
         }
         if (prodottoText.equals("")){
             textInputLayoutProdotto.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext_error));
             errortextView.setText(R.string.prodotto_vuoto);
-            linearLayout.addView(errortextView,3,layoutParams);
+            linearLayout.addView(errortextView,2,layoutParams);
             return;
         }
         if (ettariText.equals("")){
@@ -179,13 +176,13 @@ public class Pianifica extends AppCompatActivity {
             && !isValidFormat("d-M-yyyy",dataText,Locale.ITALIAN)) {
             textInputLayoutData.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext_error));
             errortextView.setText(R.string.data_non_valida);
-            linearLayout.addView(errortextView,3,layoutParams);
+            linearLayout.addView(errortextView,4,layoutParams);
             return;
         }
         if (resaText.equals("")){
             textInputLayoutResa.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.edittext_error));
             errortextView.setText(R.string.resa_vuoto);
-            linearLayout.addView(errortextView,3,layoutParams);
+            linearLayout.addView(errortextView,5,layoutParams);
             return;
         }
 

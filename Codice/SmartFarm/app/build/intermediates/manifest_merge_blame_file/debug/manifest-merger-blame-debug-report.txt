@@ -11,52 +11,65 @@
 9-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:5:5-24:19
-12        android:allowBackup="true"
-12-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="it.unisa.smartfarm.Colture" />
-21-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:12:9-44
-21-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:12:19-42
-22        <activity android:name="it.unisa.smartfarm.HomePage" />
-22-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:13:9-45
-22-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:13:19-43
-23        <activity android:name="it.unisa.smartfarm.Pianifica" />
-23-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:14:9-46
-23-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:14:19-44
-24        <activity android:name="it.unisa.smartfarm.Registrazione" />
-24-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:15:9-50
-24-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:15:19-48
-25        <activity android:name="it.unisa.smartfarm.Storico" />
-25-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:16:9-44
-25-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:16:19-42
-26        <activity android:name="it.unisa.smartfarm.MainActivity" >
-26-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:17:9-23:20
-26-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:17:19-47
-27            <intent-filter>
-27-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:18:13-22:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:19:17-69
-28-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:19:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:21:17-77
-30-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:21:27-74
-31            </intent-filter>
-32        </activity>
-33    </application>
+11-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:5:5-28:19
+12        android:name="androidx.multidex.MultiDexApplication"
+13        android:allowBackup="true"
+13-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:6:9-35
+14        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+14-->[androidx.core:core:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:24:18-86
+15        android:debuggable="true"
+16        android:icon="@mipmap/ic_launcher"
+16-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:7:9-43
+17        android:label="@string/app_name"
+17-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:8:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:9:9-54
+19        android:supportsRtl="true"
+19-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:10:9-35
+20        android:testOnly="true"
+21        android:theme="@style/AppTheme" >
+21-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:11:9-40
+22        <activity android:name="it.unisa.smartfarm.AnalisiDati" />
+22-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:12:9-48
+22-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:12:19-46
+23        <activity android:name="it.unisa.smartfarm.Coltura" />
+23-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:13:9-44
+23-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:13:19-42
+24        <activity android:name="it.unisa.smartfarm.Colture" />
+24-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:14:9-44
+24-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:14:19-42
+25        <activity android:name="it.unisa.smartfarm.Dosaggi" />
+25-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:15:9-44
+25-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:15:19-42
+26        <activity android:name="it.unisa.smartfarm.Dosaggio" />
+26-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:16:9-45
+26-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:16:19-43
+27        <activity android:name="it.unisa.smartfarm.HomePage" />
+27-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:17:9-45
+27-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:17:19-43
+28        <activity android:name="it.unisa.smartfarm.Pianifica" />
+28-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:18:9-46
+28-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:18:19-44
+29        <activity android:name="it.unisa.smartfarm.Registrazione" />
+29-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:19:9-50
+29-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:19:19-48
+30        <activity android:name="it.unisa.smartfarm.Storico" />
+30-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:20:9-44
+30-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:20:19-42
+31        <activity android:name="it.unisa.smartfarm.MainActivity" >
+31-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:21:9-27:20
+31-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:21:19-47
+32            <intent-filter>
+32-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:22:13-26:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:23:17-69
+33-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:23:25-66
 34
-35</manifest>
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:25:17-77
+35-->C:\Users\Manuel\Desktop\ProgettoIUM-Gruppo16\Codice\SmartFarm\app\src\main\AndroidManifest.xml:25:27-74
+36            </intent-filter>
+37        </activity>
+38    </application>
+39
+40</manifest>

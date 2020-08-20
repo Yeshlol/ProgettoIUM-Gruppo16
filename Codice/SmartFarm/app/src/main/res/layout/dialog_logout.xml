@@ -6,12 +6,13 @@
     android:padding="20dp">
 
     <TextView
+        style="@style/TextStyle"
         android:layout_marginTop="15dp"
         android:id="@+id/text_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/rimozione"
-        android:textSize="20dp"
+        android:text="@string/logout_prompt"
+        android:textSize="20sp"
         android:textColor="@color/black_effective"
         android:fontFamily="@font/opensans_bold"
         android:textAlignment="center"/>

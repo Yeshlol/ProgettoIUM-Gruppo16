@@ -18,7 +18,7 @@
     </style>
 
     <style name="TextStyle.Heading" parent="TextStyle">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">24sp</item>
         <item name="android:fontFamily">@font/opensans_bold</item>
     </style>
 

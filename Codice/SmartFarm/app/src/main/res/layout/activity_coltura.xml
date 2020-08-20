@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Coltura"
+    android:background="@drawable/sfondo">
+
+    <TextView
+        style="@style/TextStyle.Heading"
+        android:id="@+id/tvTitoloColtura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorGreenDark"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/prodotto"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tvProdotto"
+        android:layout_below="@id/tvTitoloColtura"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:id="@+id/tv_prodotto"
+        android:layout_below="@id/tvProdotto"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ettari"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tvEttari"
+        android:layout_below="@id/tv_prodotto"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:id="@+id/tv_ettari"
+        android:layout_below="@id/tvEttari"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/data_semina"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tvData"
+        android:layout_below="@id/tv_ettari"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:id="@+id/tv_data"
+        android:layout_below="@id/tvData"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/resa"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tvResa"
+        android:layout_below="@id/tv_data"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:id="@+id/tv_resa"
+        android:layout_below="@id/tvResa"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_border_bottom"
+        />
+
+    <Button
+        android:id="@+id/btn_elimina"
+        android:background="@drawable/button_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_resa"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/elimina_coltura"
+        android:onClick="eliminaColtura"
+        android:fontFamily="@font/opensans_bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav"
+        android:background="@drawable/bottom_bar"
+        app:itemIconTint="@color/black_effective"
+        app:itemTextColor="@color/black_effective" />
+</RelativeLayout>

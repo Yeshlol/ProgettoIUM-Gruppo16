@@ -10,6 +10,7 @@
         android:targetSdkVersion="29" />
 
     <application
+        android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -19,7 +20,11 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="it.unisa.smartfarm.AnalisiDati" />
+        <activity android:name="it.unisa.smartfarm.Coltura" />
         <activity android:name="it.unisa.smartfarm.Colture" />
+        <activity android:name="it.unisa.smartfarm.Dosaggi" />
+        <activity android:name="it.unisa.smartfarm.Dosaggio" />
         <activity android:name="it.unisa.smartfarm.HomePage" />
         <activity android:name="it.unisa.smartfarm.Pianifica" />
         <activity android:name="it.unisa.smartfarm.Registrazione" />

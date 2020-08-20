@@ -65,7 +65,6 @@
                     android:textSize="16sp"
                     android:drawableLeft="@drawable/ic_outline_account_circle_24"
                     />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -97,8 +96,8 @@
                     android:textColor="@color/black_effective"
                     android:textSize="16sp"
                     android:drawableLeft="@drawable/ic_outline_lock_24"/>
-
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
@@ -128,7 +127,6 @@
                     android:textColor="@color/black_effective"
                     android:textSize="16sp"
                     android:drawableLeft="@drawable/ic_outline_lock_24"/>
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -143,6 +141,7 @@
                     android:layout_height="wrap_content"
                     style="@style/TextStyle"
                     android:text="@string/analista"
+                    android:textSize="18sp"
                     android:layout_gravity="center"
                 />
                 <RadioButton android:id="@+id/radio_dipendente"
@@ -150,6 +149,7 @@
                     android:layout_height="wrap_content"
                     style="@style/TextStyle"
                     android:text="@string/dipendente"
+                    android:textSize="18sp"
                     android:layout_gravity="center"
                 />
             </RadioGroup>
@@ -167,7 +167,5 @@
                 android:onClick="registra"
                 android:fontFamily="@font/opensans_bold"/>
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
-
 </RelativeLayout>

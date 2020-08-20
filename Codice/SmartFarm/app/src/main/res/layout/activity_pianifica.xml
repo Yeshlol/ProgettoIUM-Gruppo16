@@ -9,7 +9,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="408dp"
         android:layout_centerVertical="true"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -24,6 +24,7 @@
             android:layout_gravity="center|top"
             android:layout_marginTop="20dp"
             android:text="@string/pianifica"
+            android:textColor="@color/colorGreenDark"
             android:textStyle="bold"
             android:layout_marginBottom="20dp"
             />
@@ -35,6 +36,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
+            android:padding="5dp"
             android:orientation="vertical"
             android:id="@+id/linearLayout">
 
@@ -172,7 +174,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/btn_server_login"
+                android:id="@+id/btn_pianifica"
                 style="@style/Button.Primary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

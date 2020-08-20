@@ -66,17 +66,38 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences spColture = getSharedPreferences(getResources().getString(R.string.file_colture), Context.MODE_PRIVATE);
         SharedPreferences.Editor editor2 = spColture.edit();
 
-        String[] coltura1 = new String[] {"Patate", "2 ha", "16/03/2020", "33 t/ha"};
+        if(!spColture.contains("Coltura 1") && !spColture.contains("Coltura 2")) {
+            editor2 = spColture.edit();
 
-        String coltura1String = TextUtils.join(";", coltura1);
-        editor2.putString("Coltura 1", coltura1String);
+            String[] coltura1 = new String[] {"Patate", "2 ha", "16/03/2020", "33 t/ha"};
 
-        String[] coltura2 = new String[] {"Carote", "4 ha", "06/05/2020", "56 t/ha"};
+            String coltura1String = TextUtils.join(";", coltura1);
+            editor2.putString("Coltura 1", coltura1String);
 
-        String coltura2String = TextUtils.join(";", coltura2);
-        editor2.putString("Coltura 2", coltura2String);
+            String[] coltura2 = new String[] {"Carote", "4 ha", "06/05/2020", "56 t/ha"};
 
-        editor2.commit();
+            String coltura2String = TextUtils.join(";", coltura2);
+            editor2.putString("Coltura 2", coltura2String);
+
+            editor2.commit();
+        }
+
+        SharedPreferences spDosaggi = getSharedPreferences(getResources().getString(R.string.file_dosaggi), Context.MODE_PRIVATE);
+
+        if(!spDosaggi.contains("Coltura 1") && !spDosaggi.contains("Coltura 2")) {
+            SharedPreferences.Editor editor3 = spDosaggi.edit();
+            String[] dosaggi1 = new String[] {"10.5", "9.5", "4.8"};
+
+            String dosaggi1String = TextUtils.join(";", dosaggi1);
+            editor3.putString("Coltura 1", dosaggi1String);
+
+            String[] dosaggi2 = new String[] {"11.4", "6.5", "7.8"};
+
+            String dosaggi2String = TextUtils.join(";", dosaggi2);
+            editor3.putString("Coltura 2", dosaggi2String);
+
+            editor3.commit();
+        }
     }
 
     public void registratiCliccato(View v){

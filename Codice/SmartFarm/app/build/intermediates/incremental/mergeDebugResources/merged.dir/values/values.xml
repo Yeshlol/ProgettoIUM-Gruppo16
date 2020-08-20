@@ -243,6 +243,7 @@
     <color name="colorAccent">#AD3025</color>
     <color name="colorBrown">#8B4F39</color>
     <color name="colorGreen">#8BD745</color>
+    <color name="colorGreenDark">#27A312</color>
     <color name="colorPrimary">#2570A3</color>
     <color name="colorPrimaryDark">#224468</color>
     <color name="colorRed">#E91911</color>
@@ -299,6 +300,7 @@
     <color name="gray">#7e7e7e</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
+    <color name="ic_launcher_background">#26A69A</color>
     <color name="light_blue">#55C8F0</color>
     <color name="light_gray">#dbdbdb</color>
     <color name="light_green">#78DC96</color>
@@ -814,6 +816,8 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="accedi">Login</string>
     <string name="account_esistente">Account già esistente.</string>
+    <string name="acidità">Acidità Suolo</string>
+    <string name="acqua">Quantità Acqua</string>
     <string name="aggiungi_coltura">Aggiungi</string>
     <string name="analisi">Analisi Dati</string>
     <string name="analista">Analista</string>
@@ -827,31 +831,44 @@
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="colture">Piano Colture</string>
+    <string name="concime">Quantità Concime</string>
     <string name="data">Seleziona Data Semina</string>
     <string name="data_non_valida">Data non valida</string>
+    <string name="data_semina">Data di Semina</string>
+    <string name="dati">Dati Rilevati</string>
+    <string name="delete_prompt">Vuoi eliminare la Coltura?</string>
     <string name="dipendente">Dipendente</string>
     <string name="dosaggi">Gestione Dosaggi</string>
+    <string name="elimina_coltura">Elimina Coltura</string>
     <string name="email">Email</string>
     <string name="email_not_found">Email non trovata</string>
     <string name="empty_email">Inserisci un email non vuota.</string>
     <string name="empty_password">Inserisci una password non vuota.</string>
     <string name="empty_password2">Ripeti la password.</string>
     <string name="error_icon_content_description">Error</string>
-    <string name="ettari">N° ettari</string>
+    <string name="ettari">N° Ettari</string>
+    <string name="ettari_coltura">Ettari Coltura</string>
     <string name="ettari_vuoto">Inserisci gli ettari da coltivare</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="file_colture">colture</string>
+    <string name="file_dosaggi">dosaggi</string>
     <string name="file_utenti">utenti</string>
     <string name="formato_errato">Formato errato email</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="home">Benvenuti in SmartFarm</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
+    <string name="insetticida">Quantità Insetticida</string>
     <string name="invalid_emailPassword">Email o password errati.</string>
+    <string name="l">l/m²</string>
     <string name="login">Login</string>
     <string name="login_dummy">Login</string>
     <string name="logout">Logout</string>
+    <string name="logout_prompt">Vuoi effettuare il logout?</string>
+    <string name="mg">mg/m²</string>
+    <string name="ml">ml/m²</string>
+    <string name="modifica_dosaggi">Modifica Dosaggi</string>
     <string description="Content description for new notification (no number count) [CHAR_LIMIT=NONE]" name="mtrl_badge_numberless_content_description">New notification</string>
     <string description="Content description for a close icon that lets the user remove content from the screen" name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="mtrl_exceed_max_badge_number_suffix" translatable="false"><ns1:g example="999" id="maximum number">%1$d</ns1:g><ns1:g example="+" id="suffix">%2$s</ns1:g></string>
@@ -897,21 +914,25 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="pianifica">Pianifica Coltura</string>
+    <string name="precipitazioni">Probabilità Precipitazioni</string>
     <string name="prodotti">Prodotti</string>
+    <string name="prodotto">Prodotto</string>
     <string name="prodotto_vuoto">Inserisci il tipo di coltivazione</string>
     <string name="quantità">Quantità</string>
     <string name="registrati"><u><b>Registrati</b></u></string>
     <string name="registrazione">Registrazione</string>
     <string name="resa">Resa Stimata (t/ha)</string>
     <string name="resa_vuoto">Inserisci la resa attesa</string>
-    <string name="rimozione">Vuoi effettuare il logout?</string>
     <string name="ripetiPassword">Ripeti Password</string>
     <string name="search_menu_title">Search</string>
     <string name="si">Conferma</string>
     <string name="stagione">Stagione: </string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="storico">Storico Colture</string>
+    <string name="storicoTemperature">Storico Temperature</string>
+    <string name="temperatura">Temperatura</string>
     <string name="title_activity_home_page">HomePage</string>
+    <string name="umidità">Livello Umidità</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

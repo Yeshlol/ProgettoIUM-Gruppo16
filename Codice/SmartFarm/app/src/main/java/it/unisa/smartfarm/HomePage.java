@@ -90,14 +90,14 @@ public class HomePage extends AppCompatActivity {
     }
 
     public void dosaggiCliccato(View v) {
-        /*Intent i = new Intent(this, Dosaggi.class);
+        Intent i = new Intent(this, Dosaggi.class);
         i.putExtra("account",accountAttivo);
-        startActivity(i);*/
+        startActivity(i);
     }
 
     public void analisiCliccato(View v) {
-        /*Intent i = new Intent(this, Analisi.class);
+        Intent i = new Intent(this, AnalisiDati.class);
         i.putExtra("account",accountAttivo);
-        startActivity(i);*/
+        startActivity(i);
     }
 }

@@ -1,4 +1,10 @@
-#Fri Aug 14 11:45:25 CEST 2020
-base.0=C\:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Thu Aug 20 23:40:21 CEST 2020
+path.2=classes2.dex
+path.1=classes.dex
 path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.2=C\:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.1=C\:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex

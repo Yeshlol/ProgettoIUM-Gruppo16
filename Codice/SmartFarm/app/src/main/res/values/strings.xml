@@ -43,7 +43,7 @@
     <string name="stagione">Stagione: </string>
 
     <!--Logout-->
-    <string name="rimozione">Vuoi effettuare il logout?</string>
+    <string name="logout_prompt">Vuoi effettuare il logout?</string>
     <string name="si">Conferma</string>
     <string name="no">Annulla</string>
 
@@ -53,7 +53,7 @@
 
     <!--Pianifica-->
     <string name="nome_coltura">Coltura n° -</string>
-    <string name="ettari">N° ettari</string>
+    <string name="ettari">N° Ettari</string>
     <string name="data">Seleziona Data Semina</string>
     <string name="resa">Resa Stimata (t/ha)</string>
     <string name="aggiungi_coltura">Aggiungi</string>
@@ -63,7 +63,32 @@
     <string name="data_non_valida">Data non valida</string>
     <string name="resa_vuoto">Inserisci la resa attesa</string>
 
+    <!--Dosaggio-->
+    <string name="insetticida">Quantità Insetticida</string>
+    <string name="concime">Quantità Concime</string>
+    <string name="acqua">Quantità Acqua</string>
+    <string name="ml">ml/m²</string>
+    <string name="mg">mg/m²</string>
+    <string name="l">l/m²</string>
+    <string name="modifica_dosaggi">Modifica Dosaggi</string>
+
+    <!--Coltura-->
+    <string name="prodotto">Prodotto</string>
+    <string name="ettari_coltura">Ettari Coltura</string>
+    <string name="data_semina">Data di Semina</string>
+    <string name="elimina_coltura">Elimina Coltura</string>
+    <string name="delete_prompt">Vuoi eliminare la Coltura?</string>
+
+    <!--Analisi-->
+    <string name="dati">Dati Rilevati</string>
+    <string name="acidità">Acidità Suolo</string>
+    <string name="umidità">Livello Umidità</string>
+    <string name="precipitazioni">Probabilità Precipitazioni</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="storicoTemperature">Storico Temperature</string>
+
     <!--SharedPreferences-->
     <string name="file_utenti">utenti</string>
     <string name="file_colture">colture</string>
+    <string name="file_dosaggi">dosaggi</string>
 </resources>

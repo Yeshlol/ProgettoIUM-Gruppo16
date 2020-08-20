@@ -28,6 +28,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="15dp"
                 android:text="@string/home"
+                android:textColor="@color/colorGreenDark"
                 android:textStyle="bold"
                 android:layout_centerHorizontal="true"
                 />

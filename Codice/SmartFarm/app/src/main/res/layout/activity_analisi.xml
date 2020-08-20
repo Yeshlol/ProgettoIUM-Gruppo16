@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnalisiDati"
+    android:background="@drawable/sfondo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextStyle.Heading"
+                android:id="@+id/tvTitolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="30dp"
+                android:text="@string/dati"
+                android:textColor="@color/colorGreenDark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/acidità"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/tvAcidità"
+                android:layout_below="@id/tvTitolo"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:id="@+id/tv_acidità"
+                android:layout_below="@id/tvAcidità"
+                android:layout_centerHorizontal="true"
+                android:text="7.2 Ph"
+                />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/umidità"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/tvUmidità"
+                android:layout_below="@id/tv_acidità"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ProgressBar
+                android:id="@+id/barraUmidità"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/tvUmidità"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progress="15"
+                android:progressDrawable="@drawable/greenprogress"
+                />
+
+            <TextView
+                android:id="@+id/myTextProgressUmidita"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignLeft="@id/barraUmidità"
+                android:layout_alignTop="@id/barraUmidità"
+                android:layout_alignRight="@id/barraUmidità"
+                android:layout_alignBottom="@id/barraUmidità"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="15%"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/precipitazioni"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/tvPrecipitazioni"
+                android:layout_below="@id/myTextProgressUmidita"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:id="@+id/tv_precipitazioni"
+                android:layout_below="@id/tvPrecipitazioni"
+                android:text="18 %"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/temperatura"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/tvTemperatura"
+                android:layout_below="@id/tv_precipitazioni"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:id="@+id/tv_temperatura"
+                android:layout_below="@id/tvTemperatura"
+                android:text="20 °C"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/storicoTemperature"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/tvStoricoTemperature"
+                android:layout_below="@id/tv_temperatura"
+                android:layout_centerHorizontal="true"
+                />
+
+            <com.anychart.AnyChartView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/tvStoricoTemperature"
+                android:layout_marginTop="5dp"
+                android:id="@+id/chartView"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav"
+        android:background="@drawable/bottom_bar"
+        app:itemIconTint="@color/black_effective"
+        app:itemTextColor="@color/black_effective"
+        />
+</RelativeLayout>
