@@ -28,12 +28,12 @@
         "source": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\src\\main\\res\\drawable-mdpi\\button_logout.xml"
     },
     {
-        "merged": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\res\\merged\\debug\\font_opensans_regular.ttf.flat",
         "source": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\src\\main\\res\\font\\opensans_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_homepage_admin.xml.flat",
@@ -72,12 +72,12 @@
         "source": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\src\\main\\res\\layout\\dialog_delete.xml"
     },
     {
-        "merged": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\res\\merged\\debug\\font_opensans_semibold.ttf.flat",
-        "source": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\src\\main\\res\\font\\opensans_semibold.ttf"
-    },
-    {
         "merged": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edittext.xml.flat",
         "source": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\src\\main\\res\\drawable\\edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\res\\merged\\debug\\font_opensans_semibold.ttf.flat",
+        "source": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\src\\main\\res\\font\\opensans_semibold.ttf"
     },
     {
         "merged": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_outline_home_24.png.flat",
@@ -214,6 +214,10 @@
     {
         "merged": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_outline_lock_24.png.flat",
         "source": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_outline_lock_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_farmer.png.flat",
+        "source": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\src\\main\\res\\drawable-hdpi\\farmer.png"
     },
     {
         "merged": "C:\\Users\\Manuel\\Desktop\\ProgettoIUM-Gruppo16\\Codice\\SmartFarm\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",

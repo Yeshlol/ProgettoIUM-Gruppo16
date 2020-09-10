@@ -1385,6 +1385,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable edittext
 drawable edittext_error
+drawable farmer
 drawable greenprogress
 drawable ic_baseline_eco_24
 drawable ic_baseline_emoji_nature_24
